@@ -1,0 +1,176 @@
+Skip Navigation This page features MathJax technology to render mathematical formulae. If you are using a screen reader, please visit MathPlayer to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time. Algorithms: Design and Analysis, Part 2
+Top Navigation BarCoursesAbout ashish shenoy 
+ 
+Algorithms: Design and Analysis, Part 2
+Tim Roughgarden
+Stanford University
+Side Navigation Bar
+Home
+Syllabus
+Course Logistics + Assessment
+Video Lectures
+Assignments
+Theory (Optional) Problems
+Discussion Forums
+Course Wiki 
+Join a Meetup 
+Feedback — Final Exam
+You submitted this exam on Sun 3 Feb 2013 2:35 PM PST. You got a score of 29.20 out of 40.00.
+
+Question 1
+Consider a connected undirected graph with distinct edge costs. Which of the following are true? [Check all that apply.]
+Your Answer		Score	Explanation
+The minimum spanning tree is unique.	✔	0.50	We proved this in the video lectures (see the correctness of Prim's algorithm).
+Suppose the edge e is the most expensive edge contained in the cycle C. Then e does not belong to any minimum spanning tree.	✔	0.50	We discussed this property in Problem Set #2.
+Suppose the edge e is not the cheapest edge that crosses the cut (A,B). Then e does not belong to any minimum spanning tree.	✘	0.00	The two-edge path graph provides a counterexample.
+Suppose the edge e is the cheapest edge that crosses the cut (A,B). Then e belongs to every minimum spanning tree.	✔	0.50	This is the Cut Property, from the lectures.
+Total		1.50 / 2.00	
+Question 2
+You are given a connected undirected graph G with distinct edge costs, in adjacency list representation. You are also given the edges of a minimum spanning tree T of G. This question asks how quickly you can recompute the MST if we change the cost of a single edge. Which of the following are true? [RECALL: It is not known how to deterministically compute an MST from scratch in O(m) time, where m is the number of edges of G.] [Check all that apply.]
+Your Answer		Score	Explanation
+Suppose e∈T and we decrease the cost of e. Then, the new MST can be recomputed in O(m) deterministic time.	✔	0.50	The MST does not change (by the Cut Property), so no re-computation is needed.
+Suppose e∉T and we decrease the cost of e. Then, the new MST can be recomputed in O(m) deterministic time.	✘	0.00	Let C be the cycle of T∪{e}. Edge e belongs to the new MST if and only if it is no longer the most expensive edge of C (this can be checked in O(n) time). If f is the new most expensive edge of C, then the new MST is T∪{e}−{f}.
+Suppose e∉T and we increase the cost of e. Then, the new MST can be recomputed in O(m) deterministic time.	✔	0.50	The MST does not change (by the Cycle Property of the previous problem), so no re-computation is needed.
+Suppose e∈T and we increase the cost of e. Then, the new MST can be recomputed in O(m) deterministic time.	✘	0.00	Let A,B be the two connected components of T−{e}. Edge e no longer belongs to the new MST if and only if it is no longer the cheapest edge crossing the cut (A,B) (this can be checked in O(m) time). If f is the new cheapest edge crossing (A,B), then the new MST is T−{e}∪{f}.
+Total		1.00 / 2.00	
+Question 3
+Which of the following problems reduce, in a straightforward way, to the minimum spanning tree problem? [Check all that apply.]
+Your Answer		Score	Explanation
+The maximum-cost spanning tree problem. That is, among all spanning trees of a connected graph with edge costs, compute one with the maximum-possible sum of edge costs.	✔	0.50	Just negate all edge costs and run an MST algorithm.
+Given a connected undirected graph G=(V,E) with positive edge costs, compute a minimum-cost set F⊆E such that the graph (V,E−F) is acyclic.	✔	0.50	The optimal such set is the complement of a maximum-cost spanning tree.
+The single-source shortest-path problem.	✔	0.50	There is no obvious way of using a minimum spanning tree subroutine to solve the single-source shortest-path problem.
+The minimum bottleneck spanning tree problem. That is, among all spanning trees of a connected graph with edge costs, compute one with the minimum-possible maximum edge cost.	✘	0.00	As discussed in the problem sets, every MST is also a minimum bottleneck spanning tree.
+Total		1.50 / 2.00	
+Question 4
+Which of the following graph algorithms can be implemented, using suitable data structures, in O(mlogn) time? (As usual, m and n denote the number of edges and vertices, respectively.) [Check all that apply.]
+Your Answer		Score	Explanation
+Kruskal's minimum spanning tree algorithm.	✔	0.50	As covered in lecture, using the union-find data structure.
+The Bellman-Ford shortest-path algorithm.	✔	0.50	Our running time was only O(mn).
+Johnson's all-pairs shortest-path algorithm.	✔	0.50	Our running time was only O(mnlogn).
+Prim's minimum spanning tree algorithm.	✔	0.50	As covered in lecture, using the heap data structure.
+Total		2.00 / 2.00	
+Question 5
+Recall the greedy clustering algorithm from lecture and the max-spacing objective function. Which of the following are true? [Check all that apply.]
+Your Answer		Score	Explanation
+If the greedy algorithm produces a k-clustering with spacing S, then every other k-clustering has spacing at most S.	✔	0.50	This is precisely the correctness theorem we discussed for the greedy clustering algorithm.
+Suppose the greedy algorithm produces a k-clustering with spacing S. Then, if x,y are two points in a common cluster of this k-clustering, the distance between x and y is at most S.	✘	0.00	It can be more, as we discussed in the proof of correctness of the greedy clustering algorithm.
+This greedy clustering algorithm can be viewed as Prim's minimum spanning tree algorithm, stopped early.	✔	0.50	No, it can be viewed as Kruskal's minimum spanning tree algorithm, stopped early.
+If the greedy algorithm produces a k-clustering with spacing S, then the distance between every pair of points chosen by the greedy algorithm (one pair per iteration) is at most S.	✘	0.00	This was a lemma we used in the proof of correctness for the greedy clustering algorithm.
+Total		1.00 / 2.00	
+Question 6
+We are given as input a set of n jobs, where job j has a processing time pj and a deadline dj. Recall the definition of completion times Cj from the video lectures. Given a schedule (i.e., an ordering of the jobs), we define the lateness lj of job j as the amount of time Cj−dj after its deadline that the job completes, or as 0 if Cj≤dj. Our goal is to minimize the total lateness, ∑jlj. Which of the following greedy rules produces an ordering that minimizes the total lateness? You can assume that all processing times and deadlines are distinct.
+WARNING: This is similar to but not identical to a problem from Problem Set #1 (the objective function is different).
+
+Your Answer		Score	Explanation
+Schedule the requests in increasing order of the product dj⋅pj	✘	0.00	There is a counterexample with two jobs (e.g., if all processing times are bigger than all deadlines).
+Total		0.00 / 2.00	
+Question 7
+Consider an alphabet with five letters, {a,b,c,d,e}, and suppose we know the frequencies fa=0.28, fb=0.27, fc=0.2, fd=0.15, and fe=0.1. What is the expected number of bits used by Huffman's coding scheme to encode a 1000-letter document?
+Your Answer		Score	Explanation
+2250	✔	2.00	For example, a=00, b=01, c=10, d=110, e=111.
+Total		2.00 / 2.00	
+Question 8
+Of the following dynamic programming algorithms covered in lecture, which ones always perform O(1) work per subproblem? [Check all that apply.]
+Your Answer		Score	Explanation
+The dynamic programming algorithm for the knapsack problem.	✔	0.40	O(1) work for each of the Θ(nW) or Θ(n2vmax) subproblems (depending on which Knapsack dynamic programming algorithm you're talking about).
+The dynamic programming algorithm for the optimal binary search tree problem.	✔	0.40	You have to try all of the candidate roots, which in general takes Θ(n) work.
+The dynamic programming algorithm for the sequence alignment problem.	✔	0.40	O(1) work for each of the Θ(mn) subproblems.
+The Floyd-Warshall all-pairs shortest-paths algorithm.	✔	0.40	O(1) work for each of the Θ(n3) subproblems.
+The Bellman-Ford shortest-path algorithm.	✔	0.40	The work per subproblem is proportional to a node's in-degree, which can be as large as Θ(n).
+Total		2.00 / 2.00	
+Question 9
+Which of the following statements are true about the tractability of the Knapsack problem? [Check all that apply.]
+Your Answer		Score	Explanation
+If there is a polynomial-time algorithm for the Knapsack problem in general, then P=NP.	✔	0.50	Yes, the (decision version of) the Knapsack problem is NP-complete.
+Assume that P≠NP. The special case of the Knapsack problem in which all item sizes are positive integers less than or equal to n5, where n is the number of items, can be solved in polynomial time.	✘	0.00	Our first dynamic programming algorithm for the Knapsack problem proves this. (Note one can assume that the capacity W is less than the sum of the item sizes, otherwise the instance is trivial.)
+Assume that P≠NP. The special case of the Knapsack problem in which all item values, item sizes, and the knapsack capacity are positive integers, can be solved in polynomial time.	✔	0.50	No, only when either the item values or the item sizes are polynomially bounded.
+Assume that P≠NP. The special case of the Knapsack problem in which all item values are positive integers less than or equal to n5, where n is the number of items, can be solved in polynomial time.	✔	0.50	Our second dynamic programming algorithm for the Knapsack problem proves this.
+Total		1.50 / 2.00	
+Question 10
+Assume that P≠NP. Which of the following extensions of the Knapsack problem can be solved in time polynomial in n, the number of items, and M, the largest number that appears in the input? [Check all that apply.]
+Your Answer		Score	Explanation
+You are given n items with positive integer values and sizes, and a positive integer capacity W, as usual. You are also given a budget k≤n on the number of items that you can use in a feasible solution. The problem is to compute the max-value set of at most k items with total size at most W.	✔	0.50	Add another dimension to the array to keep track of how many items you've used so far, this increases the running time by a factor of at most n.
+You are given n items with positive integer values and sizes, as usual, and two positive integer capacities, W1 and W2. The problem is to pack items into these two knapsacks (of capacities W1 and W2) to maximize the total value of the packed items. You are not allowed to split a single item between the two knapsacks.	✘	0.00	Add another dimension to the array to keep track of the residual capacity of the second knapsack, this increases the running time by a factor of at most W.
+You are given n items with positive integer values and sizes, as usual, and m positive integer capacities, W1,W2,…,Wm . These denote the capacities of m different Knapsacks, where m could be as large as Θ(n). The problem is to pack items into these knapsacks to maximize the total value of the packed items. You are not allowed to split a single item between two of the knapsacks.	✔	0.50	Every straightforward dynamic programming approach has running time exponential in m. More generally, this problem is NP-hard even if all of the numbers are polynomially bounded (non-trivial exercise: can you prove this?).
+You are given n items with positive integer values and sizes, and a positive integer capacity W, as usual. The problem is to compute the max-value set of items with total size exactly W. If no such set exists, the algorithm should correctly detect that fact.	✘	0.00	Requires only minor modifications to the standard Knapsack dynamic programming algorithm.
+Total		1.00 / 2.00	
+Question 11
+Assume that P≠NP. The following problems all take as input two strings X and Y, of length m and n, over some alphabet Σ. Which of them can be solved in O(mn) time? [Check all that apply.]
+Your Answer		Score	Explanation
+Compute the length of a longest common substring of X and Y. (A substring is a consecutive subsequence of a string. So "bcd" is a substring of "abcdef", whereas "bdf" is not.)	✔	0.50	Similar dynamic programming to sequence alignment, with one subproblem for each Xi and Yj.
+Consider the following variation of sequence alignment. Instead of a single gap penalty αgap, you're given two numbers a and b. The penalty of inserting k gaps in a row is now defined as ak+b, rather than kαgap. Other penalties (for matching two non-gaps) are defined as before. The goal is to compute the minimum-possible penalty of an alignment under this new cost model.	✘	0.00	Variation on the original sequence alignment dynamic program. With each subproblem, you need to keep track of what gaps you insert, since the costs you incur in the current position depend on whether or not the previous subproblems inserted gaps. Blows up the number of subproblems and running time by a constant factor.
+Assume that X and Y have the same length n. Does there exist a permutation f, mapping each i∈{1,2,…,n} to a distinct f(i)∈{1,2,…,n}, such that Xi=Yf(i) for every i=1,2,…,n?	✘	0.00	This problem can be solved in O(n) time, without dynamic programming. Just count the frequency of each symbol in each string. The permutation f exists if and only if every symbol occurs exactly the same number of times in each string.
+Compute the length of a longest common subsequence of X and Y. (Recall a subsequence need not be consecutive. For example, the longest common subsequence of "abcdef" and "afebcd" is "abcd".)	✔	0.50	Similar dynamic programming to sequence alignment, with one subproblem for each Xi and Yj. Alternatively, this reduces to sequence alignment by setting the gap penalty to 1 and making the penalty of matching two different characters to be very large.
+Total		1.00 / 2.00	
+Question 12
+Assume that P≠NP. Which of the following problems can be solved in polynomial time? [Check all that apply.]
+Your Answer		Score	Explanation
+Given a directed acyclic graph with real-valued edge lengths, compute the length of a longest path between any pair of vertices.	✔	0.50	By multiplying all edge lengths by -1, the problem reduces to computing the shortest path between any pair of vertices. Since the graph is acyclic, there are no negative-cost cycles, and this problem can be solved in polynomial time (e.g., via Floyd-Warshall or Johnson).
+Given a directed graph with real-valued edge lengths, compute the length of a longest cycle-free path between any pair of vertices (i.e., maxu,v∈VmaxP∈Puv∑e∈Pce, where Puv denotes the set of cycle-free u-v paths).	✔	0.50	The NP-complete Hamiltonian Path problem (recall PSet #6) reduces easily to this problem, so it cannot be solved in polynomial time assuming P≠NP.
+Given a directed graph with nonnegative edge lengths, compute the length of a longest cycle-free path between any pair of vertices (i.e., maxu,v∈VmaxP∈Puv∑e∈Pce, where Puv denotes the set of cycle-free u-v paths).	✔	0.50	The NP-complete Hamiltonian Path problem (recall PSet #6) reduces easily to this problem, so it cannot be solved in polynomial time assuming P≠NP.
+Given a directed graph with nonnegative edge lengths, compute the length of a maximum-length shortest path between any pair of vertices (i.e., maxu,v∈Vd(u,v), where d(u,v) is the shortest-path distance between u and v).	✔	0.50	Since edge lengths are nonnegative, there are no negative cycles. Thus, this problem reduces to all-pairs shortest paths.
+Total		2.00 / 2.00	
+Question 13
+Recall the all-pairs shortest-paths problem. Which of the following algorithms are guaranteed to be correct on instances with negative edge lengths that don't have any negative-cost cycles? [Check all that apply.]
+Your Answer		Score	Explanation
+The Floyd-Warshall algorithm.	✔	0.50	As discussed in lecture.
+Johnson's reweighting algorithm.	✔	0.50	As discussed in lecture.
+Run Dijkstra's algorithm n times, once for each choice of a source vertex.	✔	0.50	As discussed in lecture, Dijkstra's algorithm need not be correct when there are negative edge lengths, even when there is no negative-cost cycle.
+Run the Bellman-Ford algorithm n times, once for each choice of a source vertex.	✔	0.50	As discussed in lecture.
+Total		2.00 / 2.00	
+Question 14
+Consider an instance of the optimal binary search tree problem with 7 keys (say 1,2,3,4,5,6,7 in sorted order) and frequencies w1=.2,w2=.05,w3=.17,w4=.1,w5=.2,w6=.03,w7=.25. What is the minimum-possible average search time of a binary search tree with these keys?
+Your Answer		Score	Explanation
+2.23	✔	2.00	The root is 5, with children 3 and 7, and grandchildren 1, 4, 6, and NULL respectively (2 is a child of 1).
+Total		2.00 / 2.00	
+Question 15
+Suppose a computational problem Π that you care about is NP-complete. Which of the following are true? [Check all that apply.]
+Your Answer		Score	Explanation
+You should not try to design an algorithm that is guaranteed to solve Π correctly and in polynomial time for every possible instance (unless you're explicitly trying to prove that P=NP).	✔	0.50	And, moreover, I don't recommend spending too much time trying to prove that P=NP!
+NP-completeness is a "death sentence"; you should not even try to solve the instances of Π that are relevant for your application.	✔	0.50	Not true; perhaps the instances of Π arising in your domain are special enough to be solved efficiently (in theory and/or in practice).
+Since the dynamic programming algorithm design paradigm is only useful for designing exact algorithms, there's no point in trying to apply it to the problem Π.	✔	0.50	Not true; dynamic programming can potentially be used to design faster (but still exponential-time) exact algorithms (as with TSP), to design heuristics with provable performance guarantees (as with Knapsack), and to design exact algorithms for special caes (as with Knapsack).
+If your boss criticizes you for failing to find a polynomial-time algorithm for Π, you can legitimately claim that thousands of other scientists (including Turing Award winners, etc.) have likewise tried and failed to solve Π.	✔	0.50	Remember, in trying to solve one NP-complete problem, you're trying to solve them all. Countless brilliant minds have tried to devise polynomial-time algorithms for NP-complete problems (and thus, indirectly, for your own NP-complete problem Π); none have yet succeeded.
+Total		2.00 / 2.00	
+Question 16
+Which of the following statements are consistent with the current state of knowledge? [Check all that apply.]
+Your Answer		Score	Explanation
+There is an NP-complete problem that is polynomial-time solvable.	✘	0.00	For all we know, P=NP.
+There is no NP-complete problem that can be solved in O(nlogn) time, where n is the size of the input.	✔	0.50	For all we know, the running time required to solve NP-complete problems could be anywhere between polynomial and exponential (note that nlogn is more than polynomial but less than exponential).
+Some NP-complete problems are polynomial-time solvable, and some NP-complete problems are not polynomial-time solvable.	✔	0.50	A polynomial-time algorithm for a single NP-complete automatically yields polynomial-time algorithms for all NP-complete algorithms (i.e., implies that P=NP).
+There is an NP-complete problem that can be solved in O(nlogn) time, where n is the size of the input.	✘	0.00	For all we know, the running time required to solve NP-complete problems could be anywhere between polynomial and exponential (note that nlogn is more than polynomial but less than exponential).
+Total		1.00 / 2.00	
+Question 17
+Of the following problems, which can be solved in polynomial time by directly applying algorithmic ideas that were discussed in lecture and/or the homeworks? [Check all that apply.]
+Your Answer		Score	Explanation
+Given an undirected graph G and a constant value for k (i.e., k=O(1), independent of the size of G), does G have a vertex cover of size at most k?	✘	0.00	Brute-force search (checking each subset of k vertices) runs in time O(nk), which is polynomial when k=O(1).
+Given an undirected graph G and a value for k such that k=Θ(logn), where n is the number of vertices of G, does G have a vertex cover of size at most k?	✔	0.50	The Vertex Cover algorithm covered in lecture has running time O(2km) and hence runs in polynomial time in this case.
+Given an undirected graph G and a value for k such that k=Θ(logn), where n is the number of vertices of G, does G have an independent set of size at least k?	✘	0.00	There is a reduction between the vertex cover and independent set problems where you take the complement of one to get the other (see PSet #5). Unfortunately, this transforms vertex covers of size k to independent sets of size n−k and thus is not useful here. Also, it is not clear how to adapt the Vertex Cover algorithm from lecture to the Independent Set problem. In fact, it is conjectured that this problem cannot be solved in polynomial time at all.
+Given an undirected graph G and a constant value for k (i.e., k=O(1), independent of the size of G), does G have an independent set of size at least k?	✘	0.00	Brute-force search (checking each subset of k vertices) runs in time O(nk), which is polynomial when k=O(1).
+Total		0.50 / 2.00	
+Question 18
+In lecture we gave a dynamic programming algorithm for the traveling salesman problem. Does this algorithm imply that P=NP? [Check all that apply.]
+Your Answer		Score	Explanation
+Yes, it does.	✔	0.40	If it did, we'd collectively be a million bucks richer!
+No. Since we sometimes perform a super-polynomial amount of work computing the solution of a single subprolem, the algorithm does not run in polynomial time.	✔	0.40	We only do O(n) work computing the answer to a single subproblem; the issue is that there are exponentially many such subproblems.
+No. A polynomial-time algorithm for the traveling salesman problem does not necessarily imply that P=NP.	✔	0.40	Since (the decision version of) the traveling salesman problem is NP-complete, a polynomial-time algorithm for TSP would indeed imply that P=NP.
+No. Since there are an exponential number of subproblems in our dynamic programming formulation, the algorithm does not run in polynomial time.	✔	0.40	Precisely.
+No. Since we perform a super-polynomial amount of work extracting the final TSP solution from the solutions of all of the subproblems, the algorithm does not run in polynomial time.	✔	0.40	We only do O(n) work computing the final answer, given the solutions of all of the (exponentially many) subproblems.
+Total		2.00 / 2.00	
+Question 19
+Consider the Knapsack problem and the following greedy algorithm: (1) sort the items in nonincreasing order of value over size (i.e., the ratio vi/wi); (2) return the maximal prefix of items that fits in the Knapsack (i.e., the k items with the largest ratios, where k is as large as possible subject to the sum of the item sizes being at most the knapsack capacity W). Which of the following are true? [Check all that apply.]
+Your Answer		Score	Explanation
+If all items have the same size, then this algorithm always outputs an optimal solution (no matter how ties are broken).	✔	0.40	Easy exchange argument (all relevant feasible solutions pack the same number of items).
+This algorithm always outputs a feasible solution with total value at least 50% times that of an optimal solution.	✔	0.40	This is only true if you add a third step, which takes the better of this solution and the max-value item (as discussed in lecture).
+If the size of every item is at most 20% of the Knapsack capacity (i.e., wi≤W/5 for every i), then this algorithm is guaranteed to output a feasible solution with total value at least 80% times that of an optimal solution.	✔	0.40	As discussed in lecture, this is true even without the "Step 3" optimization that compares the greedy solution to the max-value item.
+If all items have the same value, then this algorithm always outputs an optimal solution (no matter how ties are broken).	✘	0.00	Easy exchange argument.
+If all items have the same value/size ratio, then this algorithm always outputs an optimal solution (no matter how ties are broken).	✘	0.00	Suppose W=4, v1=w1=3, v2=w2=v3=w3=2.
+Total		1.20 / 2.00	
+Question 20
+Which of the following statements are true about the generic local search algorithm? [Check all that apply.]
+Your Answer		Score	Explanation
+The output of the generic local search algorithm generally depends on the choice of the starting point.	✔	0.50	Yes, different initial choices can lead to different locally optimal solutions.
+The generic local search algorithm is guaranteed to eventually converge to an optimal solution.	✔	0.50	No, only a locally optimal solution.
+The generic local search algorithm is guaranteed to terminate in a polynomial number of iterations.	✔	0.50	No, in general it can require an exponential number of iterations.
+The output of the generic local search algorithm generally depends on the choice of the superior neighboring solution to move to next (in an iteration where there are multiple such solutions).	✔	0.50	Yes, different choices for which neighboring solution to move to can lead to different locally optimal solutions.
+Total		2.00 / 2.00	
+

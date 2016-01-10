@@ -1,0 +1,16 @@
+#print 'i=%d j=%d dist=%d' % (i,j,dist)
+                    #if dist <= max_spacing_in_cluster:
+                        #print 'Fusing node %s with node %s' %(candidate_node, node)
+                        #if union(candidate_node, node):
+                            #curr_clusters -= 1
+                            # remove from hamming set
+                            #hamming_sets[i].remove(candidate_node)
+                            #hamming_sets[j].remove(node)
+                            #clustered_nodes.append(candidate_node)
+                            #clustered_nodes.append(node)
+                            #flag = 1
+                            #break
+                    # else continue with next possible node
+            #if flag == 1:
+                #break 
+
