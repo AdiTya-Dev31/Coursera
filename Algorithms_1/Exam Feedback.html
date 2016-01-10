@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://class.coursera.org/algo-2012-002/quiz/feedback?submission_id=225393 -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Exam Feedback</title>
+
+<link rel="stylesheet" href="https://class.coursera.org/assets/core/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://class.coursera.org/assets/core/css/main.css">
+<link rel="stylesheet" href="https://class.coursera.org/assets/core/css/font-awesome.css">
+<script type="text/javascript" async="" src="./Exam Feedback_files/204.min.js"></script><script type="text/javascript" async="" src="./Exam Feedback_files/ga.js"></script><script type="text/javascript" src="./Exam Feedback_files/jquery.js"></script>
+<script type="text/javascript" src="./Exam Feedback_files/json.js"></script>
+<script type="text/javascript" src="./Exam Feedback_files/hc_fix.js"></script>
+<script src="./Exam Feedback_files/bootstrap-modal.js" type="text/javascript"></script>
+<script src="./Exam Feedback_files/modal_focus.js" type="text/javascript"></script>
+<script src="./Exam Feedback_files/bind_modal_focus.js" type="text/javascript"></script>
+<script src="./Exam Feedback_files/top_nav_bar.js" type="text/javascript"></script>
+<script src="./Exam Feedback_files/quiz_timer.js"></script>
+<script src="./Exam Feedback_files/get_query_parameters.js"></script>
+<script src="./Exam Feedback_files/attempt.js"></script>
+<link rel="stylesheet" href="https://class.coursera.org/assets/app/quiz/css/quiz_questions.css">
+<script src="./Exam Feedback_files/MathJax.js"></script>
+<link rel="stylesheet" href="https://class.coursera.org/assets/app/quiz/css/quiz.css">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28377374-1']);
+  _gaq.push(['_setDomainName', 'coursera.org']);
+  _gaq.push(['_setAllowLinker', true]);  
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  window._204 = window._204 || [];
+  window._204.push({key:"pageview", val:{}});
+
+  (function()
+  {
+    var a = document.createElement('script'); a.type = 'text/javascript'; a.async = true;
+    a.src = 'https://eventing.coursera.org/204.min.js?client=spark&user=279725';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(a, s);
+  })();
+
+</script>
+<link rel="icon" href="https://spark-public.s3.amazonaws.com/algo1/static/images/favicon.ico">
+
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuTitle {background-color: #CCCCCC; margin: -5px 0 0 0; text-align: center; font-style: italic; font-size: 80%; color: #444444; padding: 2px 0; overflow: hidden}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; border: 0; padding: 0; margin: 0}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0 !important; padding: 0 !important; margin: 0 !important; vertical-align: 0 !important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap ! important}
+.MathJax img {display: inline ! important; float: none ! important}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block; overflow: hidden; width: 1px; height: 60ex}
+.MathJax .MathJax_EmBox {display: block; overflow: hidden; width: 1px; height: 60em}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Main; src: url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff'), url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Main; src: url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff'), url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf') format('opentype'); font-weight: bold}
+@font-face {font-family: MathJax_Main; src: url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff'), url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf') format('opentype'); font-style: italic}
+@font-face {font-family: MathJax_Math; src: url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff') format('woff'), url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf') format('opentype'); font-style: italic}
+@font-face {font-family: MathJax_Caligraphic; src: url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff') format('woff'), url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Size1; src: url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff') format('woff'), url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Size2; src: url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff') format('woff'), url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Size3; src: url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff') format('woff'), url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Size4; src: url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://class.coursera.org/assets/core/js/mathjax2/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; "><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none; "></div>
+    <a href="https://class.coursera.org/algo-2012-002/quiz/feedback?submission_id=225393#page-content" class="hidden">Skip Navigation</a>
+    <div class="hidden">
+        This page features MathJax technology to render mathematical formulae.
+        If you are using a screen reader, please visit <a href="http://www.dessci.com/en/products/mathplayer/">MathPlayer</a> to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.
+    </div>
+
+    <h1 class="hidden">Algorithms: Design and Analysis, Part I</h1>
+
+	
+<div class="coursera_topbar">
+    <h2 class="hidden">Top Navigation Bar</h2>
+
+    <div class="coursera_navbar_container">
+        <ul class="coursera_toplevel_nav" id="coursera_topbar">
+            <li class="coursera_top_item"><a href="https://www.coursera.org/courses/" target="_new">Courses</a></li>
+
+            
+            <li class="coursera_top_item">
+                <a href="https://class.coursera.org/algo-2012-002/quiz/feedback?submission_id=225393#" rel="dropdown_aboutus" style="cursor:hand">About <i class="icon-caret-down"></i> </a>
+            </li>
+
+                        
+            <li class="coursera_top_item">
+                <a href="https://class.coursera.org/algo-2012-002/quiz/feedback?submission_id=225393#" rel="dropdown_my">ashish shenoy <i class="icon-caret-down"></i> </a>
+            </li>
+            
+                    </ul>
+    </div>
+
+    <ul id="dropdown_aboutus" class="coursera_submenu_nav">
+        <li class="coursera_sub_item"><a href="https://www.coursera.org/about/jobs" target="_new">Jobs</a></li>
+        <li class="coursera_sub_item"><a href="https://www.coursera.org/about/team" target="_new">Team</a></li>
+        <li class="coursera_sub_item"><a href="https://www.coursera.org/about/contact" target="_new">Contact Us</a></li>
+        <li class="coursera_sub_item"><a href="https://www.coursera.org/about/" target="_new">About Us</a></li>
+    </ul>
+
+    <ul id="dropdown_my" class="coursera_submenu_nav">
+        <li class="coursera_sub_item"><a href="https://www.coursera.org/" target="_new">My Courses</a></li>
+        <li class="coursera_sub_item"><a href="https://www.coursera.org/account/profile" target="_new">My Profile</a></li>
+        <li class="coursera_sub_item"><a href="https://class.coursera.org/algo-2012-002/class/preferences">Course Preferences</a></li>
+        <li class="coursera_sub_item"><a href="https://class.coursera.org/algo-2012-002/auth/logout">Logout</a></li>
+    </ul>
+
+    <div class="coursera_logo_container">
+        <a href="https://www.coursera.org/">
+        <img id="coursera_topbar_logo" src="./Exam Feedback_files/topbar-coursera-logo.png" alt="Coursera">
+        </a>
+    </div>
+
+</div>
+
+
+<div id="banner-top" style="background:repeat-x url(&#39;https://s3.amazonaws.com/coursera/universities/stanford/top-banner-background.png&#39;)">
+    <div id="course-logo-text">
+        <a href="https://class.coursera.org/algo-2012-002/class/index">
+            <div>
+                <div>
+                    <img src="./Exam Feedback_files/top-banner.png">
+                </div>
+                <div class="course-logo-image" style="position:absolute;top:47px;left:17px;height:68px;width:120px;">
+                    <div style="background-position:-5px 0px;background-size:130px;height:68px;width:120px;background-image:url(&#39;https://s3.amazonaws.com/coursera/topics/algo/small-icon.hover.png&#39;)">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="course-logo-name" style="position:absolute;top:87px;left:155px;">
+                <nobr>Algorithms: Design and Analysis, Part I</nobr>
+            </div>
+        </a>
+    </div>
+    <div id="banner-course-info">
+        <div class="course-instructor-name">Tim Roughgarden</div>
+        <div class="course-time">Associate Professor of Computer Science</div>
+    </div>
+</div>
+    
+        <div class="container-fluid">
+        <div class="sidebar page-sidebar" id="page-sidebar">
+            <h2 class="hidden">Side Navigation Bar</h2>
+<ul style="list-style-type:none;margin-left:0px;">
+		<li>
+		<p class="navbar_item navbar_home">
+				<a href="https://class.coursera.org/algo-2012-002/class/index">
+			Home		</a>
+				</p>
+	</li>
+		<li>
+		<p class="navbar_item navbar_wiki">
+				<a href="https://class.coursera.org/algo-2012-002/wiki/view?page=Syllabus">
+			Syllabus		</a>
+				</p>
+	</li>
+		<li>
+		<p class="navbar_item navbar_lecture">
+				<a href="https://class.coursera.org/algo-2012-002/lecture/index">
+			Video Lectures		</a>
+				</p>
+	</li>
+		<li>
+		<p class="navbar_item navbar_quiz">
+				<a href="https://class.coursera.org/algo-2012-002/quiz/index">
+			Problem Sets		</a>
+				</p>
+	</li>
+		<li>
+		<p class="navbar_item navbar_quiz">
+				<a href="https://class.coursera.org/algo-2012-002/quiz/index?quiz_type=homework">
+			Programming Questions		</a>
+				</p>
+	</li>
+		<li>
+		<p class="navbar_item navbar_quiz">
+				<a href="https://class.coursera.org/algo-2012-002/wiki/view?page=TheoryProblems">
+			Theory Problems		</a>
+				</p>
+	</li>
+		<li>
+		<p class="navbar_item navbar_forum">
+				<a href="https://class.coursera.org/algo-2012-002/forum/index">
+			Discussion Forums		</a>
+				</p>
+	</li>
+		<li>
+		<p class="navbar_item navbar_wiki">
+				<a href="https://class.coursera.org/algo-2012-002/wiki/view?page=CourseLogistics">
+			Course Logistics		</a>
+				</p>
+	</li>
+		<li>
+		<p class="navbar_item navbar_wiki">
+				<a href="http://www.universalsubtitles.org/en/teams/coursera/p/algo">
+			Help with Subtitles		</a>
+				</p>
+	</li>
+	</ul>
+
+        </div>
+        <div class="content page-content" id="page-content">
+            
+
+<h2>
+Feedback —  
+Final Exam</h2>
+
+<div class="quiz_feedback">You have submitted this exam on <strong>Wed  1 Aug 2012  8:23:48 PM PDT</strong>. You achieved a score of <strong>27.25</strong> out of <strong>30.00</strong>.</div>
+<form method="post" id="quiz_form">
+
+
+<div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 1</h3>
+<div class="quiz_question_text">Recall the Partition subroutine that we used in both QuickSort and RSelect.  Suppose that the following array has just been partitioned around some pivot element: 3, 1, 2, 4, 5, 8, 7, 6, 9 <br><br>
+Which of these elements could have been the pivot element? (Hint: There could be more than one possibility!)</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[1219eb5c14fc6d19b4c38f85a5f1ba26][]" id="gensym_5019f3357b5f3" value="de22397e29bd80426fa14faef910d929" disabled="">2</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.20</td>
+<td>Because there is a "3" to the left of it, "2" could not have been the pivot.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[1219eb5c14fc6d19b4c38f85a5f1ba26][]" id="gensym_5019f3357c115" value="fff7ff3d33af9d9070e15c80ba2e3af9" disabled="">3</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.20</td>
+<td>Because there is a "1" and "2" to the right of it, "3" could not have been the pivot.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[1219eb5c14fc6d19b4c38f85a5f1ba26][]" id="gensym_5019f3357cb94" value="1949ee82455131eb399df0eae7a8f2d3" checked="" disabled="">5</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.20</td>
+<td>All numbers to the left of it are less than it; all numbers to the right of it are bigger than it; so it could have been the pivot.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[1219eb5c14fc6d19b4c38f85a5f1ba26][]" id="gensym_5019f3357d6ec" value="e3222075e38572705a1e3f57d8defed1" checked="" disabled="">4</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.20</td>
+<td>All numbers to the left of it are less than it; all numbers to the right of it are bigger than it; so it could have been the pivot.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[1219eb5c14fc6d19b4c38f85a5f1ba26][]" id="gensym_5019f3357e1dd" value="6786d01cf6e36d72bfe6ecf89ffda9df" checked="" disabled="">9</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.20</td>
+<td>All numbers to the left of it are less than it; all numbers to the right of it are bigger than it; so it could have been the pivot.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 2</h3>
+<div class="quiz_question_text">Here is an array of ten integers:  5  3  8  9  1  7  0  2  6  4 <br><br>
+
+Suppose we run MergeSort on this array.  
+What is the number in the 7th position of the partially sorted array after the outermost two recursive calls have completed (i.e., just before the very last Merge step)?  (When we say "7th" position, we're counting positions starting at 1; for example, the input array has a "0" in its 7th position.)</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[e66eb05bea6bddad674cbb32f667a4f2][]" id="gensym_5019f33581b3f" value="dd6e406acd90a21716aebafb5440f589" checked="" disabled="">2</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>1.00</td>
+<td>The array at this point of the algorithm is 1 3 5 8 9 0 2 4 6 7.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 3</h3>
+<div class="quiz_question_text">What is the asymptotic worst-case running time of MergeSort, as a function of the input array length <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-1-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-1"><span style="display: inline-block; position: relative; width: 0.595em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-2"><span class="mi" id="MathJax-Span-3" style="font-family: MathJax_Math; font-style: italic; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.707em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-1">n</script>?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[0aeb486580fc1a5959166d8c554fe608][]" id="gensym_5019f33585c87" value="cde79662d9533b8a37d1b16ea67ad670" checked="" disabled=""><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-2-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-4"><span style="display: inline-block; position: relative; width: 3.95em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.452em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-5"><span class="mi" id="MathJax-Span-6" style="font-family: MathJax_Math; font-style: italic; ">θ</span><span class="mo" id="MathJax-Span-7" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-8" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mi" id="MathJax-Span-9" style="font-family: MathJax_Main; padding-left: 0.167em; ">log</span><span class="mo" id="MathJax-Span-10"></span><span class="mi" id="MathJax-Span-11" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em; ">n</span><span class="mo" id="MathJax-Span-12" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-2">\theta(n\log n)</script></td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>1.00</td>
+<td>As discussed in lecture.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 4</h3>
+<div class="quiz_question_text">Consider a directed graph <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-3-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-13"><span style="display: inline-block; position: relative; width: 4.762em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.437em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-14"><span class="mi" id="MathJax-Span-15" style="font-family: MathJax_Math; font-style: italic; ">G</span><span class="mo" id="MathJax-Span-16" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mo" id="MathJax-Span-17" style="font-family: MathJax_Main; padding-left: 0.278em; ">(</span><span class="mi" id="MathJax-Span-18" style="font-family: MathJax_Math; font-style: italic; ">V<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.186em; "></span></span><span class="mo" id="MathJax-Span-19" style="font-family: MathJax_Main; ">,</span><span class="mi" id="MathJax-Span-20" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em; ">E<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.026em; "></span></span><span class="mo" id="MathJax-Span-21" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-3">G = (V,E)</script> with non-negative edge lengths and two vertices <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-4-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-22"><span style="display: inline-block; position: relative; width: 0.433em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.742em -0.434em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-23"><span class="mi" id="MathJax-Span-24" style="font-family: MathJax_Math; font-style: italic; ">s</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.706em; vertical-align: -0.081em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-4">s</script> and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-5-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-25"><span style="display: inline-block; position: relative; width: 0.379em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.781em 1000em 2.743em -0.468em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-26"><span class="mi" id="MathJax-Span-27" style="font-family: MathJax_Math; font-style: italic; ">t</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.939em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-5">t</script> of <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-6-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-28"><span style="display: inline-block; position: relative; width: 0.812em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.724em 1000em 2.754em -0.435em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-29"><span class="mi" id="MathJax-Span-30" style="font-family: MathJax_Math; font-style: italic; ">V<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.186em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.025em; vertical-align: -0.096em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-6">V</script>.    Let <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-7-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-31"><span style="display: inline-block; position: relative; width: 0.758em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.724em 1000em 2.732em -0.454em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-32"><span class="mi" id="MathJax-Span-33" style="font-family: MathJax_Math; font-style: italic; ">P<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.109em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.997em; vertical-align: -0.068em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-7">P</script> denote a shortest path from <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-8-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-34"><span style="display: inline-block; position: relative; width: 0.433em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.742em -0.434em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-35"><span class="mi" id="MathJax-Span-36" style="font-family: MathJax_Math; font-style: italic; ">s</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.706em; vertical-align: -0.081em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-8">s</script> to <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-9-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-37"><span style="display: inline-block; position: relative; width: 0.379em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.781em 1000em 2.743em -0.468em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-38"><span class="mi" id="MathJax-Span-39" style="font-family: MathJax_Math; font-style: italic; ">t</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.939em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-9">t</script> in <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-10-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-40"><span style="display: inline-block; position: relative; width: 0.758em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.702em 1000em 2.754em -0.437em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-41"><span class="mi" id="MathJax-Span-42" style="font-family: MathJax_Math; font-style: italic; ">G</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.052em; vertical-align: -0.096em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-10">G</script>. If we add 10 to the length of every edge in the graph, then:</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[3b41f922355f710e4a0d069fadb61be4][]" id="gensym_5019f335896a9" value="9eecfc13804d69887a727590152bb828" disabled=""><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-11-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-43"><span style="display: inline-block; position: relative; width: 0.758em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.724em 1000em 2.732em -0.454em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-44"><span class="mi" id="MathJax-Span-45" style="font-family: MathJax_Math; font-style: italic; ">P<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.109em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.997em; vertical-align: -0.068em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-11">P</script> definitely does not remain a shortest <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-12-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-46"><span style="display: inline-block; position: relative; width: 2.002em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.997em 1000em 2.959em -0.434em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-47"><span class="mi" id="MathJax-Span-48" style="font-family: MathJax_Math; font-style: italic; ">s</span><span class="mo" id="MathJax-Span-49" style="font-family: MathJax_Main; padding-left: 0.222em; ">−</span><span class="mi" id="MathJax-Span-50" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em; ">t</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.939em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-12">s-t</script> path.</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.25</td>
+<td>If you get lucky (e.g., <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-13-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-51"><span style="display: inline-block; position: relative; width: 0.758em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.724em 1000em 2.732em -0.454em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-52"><span class="mi" id="MathJax-Span-53" style="font-family: MathJax_Math; font-style: italic; ">P<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.109em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.997em; vertical-align: -0.068em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-13">P</script> has only one edge) then <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-14-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-54"><span style="display: inline-block; position: relative; width: 0.758em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.724em 1000em 2.732em -0.454em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-55"><span class="mi" id="MathJax-Span-56" style="font-family: MathJax_Math; font-style: italic; ">P<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.109em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.997em; vertical-align: -0.068em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-14">P</script> might remain a shortest path.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[3b41f922355f710e4a0d069fadb61be4][]" id="gensym_5019f3358a2c9" value="009ec0e714318c1e56fada83c1fa547e" checked="" disabled=""><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-15-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-57"><span style="display: inline-block; position: relative; width: 0.758em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.724em 1000em 2.732em -0.454em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-58"><span class="mi" id="MathJax-Span-59" style="font-family: MathJax_Math; font-style: italic; ">P<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.109em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.997em; vertical-align: -0.068em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-15">P</script> definitely remains a shortest <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-16-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-60"><span style="display: inline-block; position: relative; width: 2.002em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.997em 1000em 2.959em -0.434em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-61"><span class="mi" id="MathJax-Span-62" style="font-family: MathJax_Math; font-style: italic; ">s</span><span class="mo" id="MathJax-Span-63" style="font-family: MathJax_Main; padding-left: 0.222em; ">−</span><span class="mi" id="MathJax-Span-64" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em; ">t</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.939em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-16">s-t</script> path.</td>
+<td><img src="./Exam Feedback_files/cross.png" title="Incorrect" alt="Incorrect"></td>
+<td>0.00</td>
+<td>As discussed in lecture, adding a constant to every edge can change the shortest path.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[3b41f922355f710e4a0d069fadb61be4][]" id="gensym_5019f3358ae82" value="22165cd8315fe2be7e61fe9ac26abdcb" disabled="">If <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-17-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-65"><span style="display: inline-block; position: relative; width: 0.758em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.724em 1000em 2.732em -0.454em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-66"><span class="mi" id="MathJax-Span-67" style="font-family: MathJax_Math; font-style: italic; ">P<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.109em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.997em; vertical-align: -0.068em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-17">P</script> has only one edge, then <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-18-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-68"><span style="display: inline-block; position: relative; width: 0.758em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.724em 1000em 2.732em -0.454em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-69"><span class="mi" id="MathJax-Span-70" style="font-family: MathJax_Math; font-style: italic; ">P<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.109em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.997em; vertical-align: -0.068em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-18">P</script> definitely remains a shortest <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-19-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-71"><span style="display: inline-block; position: relative; width: 2.002em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.997em 1000em 2.959em -0.434em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-72"><span class="mi" id="MathJax-Span-73" style="font-family: MathJax_Math; font-style: italic; ">s</span><span class="mo" id="MathJax-Span-74" style="font-family: MathJax_Main; padding-left: 0.222em; ">−</span><span class="mi" id="MathJax-Span-75" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em; ">t</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.939em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-19">s-t</script> path.</td>
+<td><img src="./Exam Feedback_files/cross.png" title="Incorrect" alt="Incorrect"></td>
+<td>0.00</td>
+<td>Every path <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-20-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-76"><span style="display: inline-block; position: relative; width: 0.758em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.724em 1000em 2.732em -0.454em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-77"><span class="mi" id="MathJax-Span-78" style="font-family: MathJax_Math; font-style: italic; ">P<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.109em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.997em; vertical-align: -0.068em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-20">P</script> goes up in length by at least as much as <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-21-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-79"><span style="display: inline-block; position: relative; width: 0.758em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.724em 1000em 2.732em -0.454em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-80"><span class="mi" id="MathJax-Span-81" style="font-family: MathJax_Math; font-style: italic; ">P<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.109em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.997em; vertical-align: -0.068em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-21">P</script> does, so <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-22-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-82"><span style="display: inline-block; position: relative; width: 0.758em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.724em 1000em 2.732em -0.454em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-83"><span class="mi" id="MathJax-Span-84" style="font-family: MathJax_Math; font-style: italic; ">P<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.109em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.997em; vertical-align: -0.068em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-22">P</script> remains the shortest.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[3b41f922355f710e4a0d069fadb61be4][]" id="gensym_5019f3358b9e5" value="ddd111f9b6512ec786326dfc9639134a" disabled=""><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-23-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-85"><span style="display: inline-block; position: relative; width: 0.758em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.724em 1000em 2.732em -0.454em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-86"><span class="mi" id="MathJax-Span-87" style="font-family: MathJax_Math; font-style: italic; ">P<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.109em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.997em; vertical-align: -0.068em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-23">P</script> might or might not remain a shortest <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-24-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-88"><span style="display: inline-block; position: relative; width: 2.002em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.997em 1000em 2.959em -0.434em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-89"><span class="mi" id="MathJax-Span-90" style="font-family: MathJax_Math; font-style: italic; ">s</span><span class="mo" id="MathJax-Span-91" style="font-family: MathJax_Main; padding-left: 0.222em; ">−</span><span class="mi" id="MathJax-Span-92" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em; ">t</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.939em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-24">s-t</script> path (depending on the graph).</td>
+<td><img src="./Exam Feedback_files/cross.png" title="Incorrect" alt="Incorrect"></td>
+<td>0.00</td>
+<td>As discussed in lecture, adding a constant to every edge can change the shortest path.  (But it might not, if you get lucky.)</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>0.25 / 1.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 5</h3>
+<div class="quiz_question_text">What is the running time of depth-ﬁrst search, as a function of <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-25-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-93"><span style="display: inline-block; position: relative; width: 0.595em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-94"><span class="mi" id="MathJax-Span-95" style="font-family: MathJax_Math; font-style: italic; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.707em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-25">n</script> and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-26-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-96"><span style="display: inline-block; position: relative; width: 0.866em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-97"><span class="mi" id="MathJax-Span-98" style="font-family: MathJax_Math; font-style: italic; ">m</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.707em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-26">m</script>, if the input graph <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-27-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-99"><span style="display: inline-block; position: relative; width: 4.762em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.437em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-100"><span class="mi" id="MathJax-Span-101" style="font-family: MathJax_Math; font-style: italic; ">G</span><span class="mo" id="MathJax-Span-102" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mo" id="MathJax-Span-103" style="font-family: MathJax_Main; padding-left: 0.278em; ">(</span><span class="mi" id="MathJax-Span-104" style="font-family: MathJax_Math; font-style: italic; ">V<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.186em; "></span></span><span class="mo" id="MathJax-Span-105" style="font-family: MathJax_Main; ">,</span><span class="mi" id="MathJax-Span-106" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em; ">E<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.026em; "></span></span><span class="mo" id="MathJax-Span-107" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-27">G=(V,E)</script> is represented by an adjacency matrix (i.e., NOT an adjacency list), where as usual <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-28-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-108"><span style="display: inline-block; position: relative; width: 3.247em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.197em -0.466em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-109"><span class="mi" id="MathJax-Span-110" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-111" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="texatom" id="MathJax-Span-112" style="padding-left: 0.278em; "><span class="mrow" id="MathJax-Span-113"><span class="mo" id="MathJax-Span-114" style="font-family: MathJax_Main; ">|</span></span></span><span class="mi" id="MathJax-Span-115" style="font-family: MathJax_Math; font-style: italic; ">V<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.186em; "></span></span><span class="texatom" id="MathJax-Span-116"><span class="mrow" id="MathJax-Span-117"><span class="mo" id="MathJax-Span-118" style="font-family: MathJax_Main; ">|</span></span></span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.395em; vertical-align: -0.382em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-28">n=|V|</script> and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-29-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-119"><span style="display: inline-block; position: relative; width: 3.463em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.197em -0.466em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-120"><span class="mi" id="MathJax-Span-121" style="font-family: MathJax_Math; font-style: italic; ">m</span><span class="mo" id="MathJax-Span-122" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="texatom" id="MathJax-Span-123" style="padding-left: 0.278em; "><span class="mrow" id="MathJax-Span-124"><span class="mo" id="MathJax-Span-125" style="font-family: MathJax_Main; ">|</span></span></span><span class="mi" id="MathJax-Span-126" style="font-family: MathJax_Math; font-style: italic; ">E<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.026em; "></span></span><span class="texatom" id="MathJax-Span-127"><span class="mrow" id="MathJax-Span-128"><span class="mo" id="MathJax-Span-129" style="font-family: MathJax_Main; ">|</span></span></span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.395em; vertical-align: -0.382em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-29">m=|E|</script> ?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[10981778f94b594b61669aa859681be0][]" id="gensym_5019f3358f2ec" value="37fad532185ed2fc7d69b1779ddd863e" checked="" disabled=""><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-30-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-130"><span style="display: inline-block; position: relative; width: 2.273em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.79em 1000em 3.198em -0.452em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-131"><span class="mi" id="MathJax-Span-132" style="font-family: MathJax_Math; font-style: italic; ">θ</span><span class="mo" id="MathJax-Span-133" style="font-family: MathJax_Main; ">(</span><span class="msubsup" id="MathJax-Span-134"><span style="display: inline-block; position: relative; width: 1.049em; height: 0px; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mi" id="MathJax-Span-135" style="font-family: MathJax_Math; font-style: italic; ">n</span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span><span style="position: absolute; top: -2.716em; left: 0.595em; "><span class="mn" id="MathJax-Span-136" style="font-size: 70.7%; font-family: MathJax_Main; ">2</span><span style="display: inline-block; width: 0px; height: 2.353em; "></span></span></span></span><span class="mo" id="MathJax-Span-137" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.502em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-30">\theta(n^2)</script></td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>1.00</td>
+<td>For the lower bound, in the worst case you have to look at every entry twice.  For the upper bound, one easy approach is construct the adjacency list from the adjacency matrix (this is easy to do with a scan over the matrix) and then use the subroutine from the video lectures.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 6</h3>
+<div class="quiz_question_text">What is the asymptotic running time of the Insert and Extract-Min operations, respectively, for a heap with <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-31-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-138"><span style="display: inline-block; position: relative; width: 0.595em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-139"><span class="mi" id="MathJax-Span-140" style="font-family: MathJax_Math; font-style: italic; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.707em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-31">n</script> objects?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[026072dd75e670a49d671dcbaa888313][]" id="gensym_5019f33592f13" value="690fa83e488fef4528bd7dfea59c42f5" checked="" disabled=""><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-32-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-141"><span style="display: inline-block; position: relative; width: 3.517em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.431em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-142"><span class="mi" id="MathJax-Span-143" style="font-family: MathJax_Main; ">Θ</span><span class="mo" id="MathJax-Span-144" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-145" style="font-family: MathJax_Main; ">log</span><span class="mo" id="MathJax-Span-146"></span><span class="mi" id="MathJax-Span-147" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em; ">n</span><span class="mo" id="MathJax-Span-148" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-32">\Theta(\log n)</script> and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-33-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-149"><span style="display: inline-block; position: relative; width: 3.517em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.431em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-150"><span class="mi" id="MathJax-Span-151" style="font-family: MathJax_Main; ">Θ</span><span class="mo" id="MathJax-Span-152" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-153" style="font-family: MathJax_Main; ">log</span><span class="mo" id="MathJax-Span-154"></span><span class="mi" id="MathJax-Span-155" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em; ">n</span><span class="mo" id="MathJax-Span-156" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-33">\Theta(\log n)</script></td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>1.00</td>
+<td></td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 7</h3>
+<div class="quiz_question_text">On adding one extra edge to a directed graph G, the number of strongly connected components...?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[fbea00eff1dc8fd8e8d569ee43f74911][]" id="gensym_5019f33596adb" value="defc3ab4cd5b483dde8ea9243441e5fe" checked="" disabled="">...might or might not remain the same (depending on the graph).</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>1.00</td>
+<td>That's correct!</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 8</h3>
+<div class="quiz_question_text">What is the asymptotic running time of Randomized QuickSort on arrays of length <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-34-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-157"><span style="display: inline-block; position: relative; width: 0.595em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-158"><span class="mi" id="MathJax-Span-159" style="font-family: MathJax_Math; font-style: italic; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.707em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-34">n</script>, in expectation (over the choice of random pivots) and in the worst case, respectively?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[57c6edfeaa072e7759e7db9b8a4cac61][]" id="gensym_5019f3359a5cc" value="d5afee9a8aa8ba825a6c6524618f2b69" checked="" disabled=""><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-35-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-160"><span style="display: inline-block; position: relative; width: 4.275em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.431em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-161"><span class="mi" id="MathJax-Span-162" style="font-family: MathJax_Main; ">Θ</span><span class="mo" id="MathJax-Span-163" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-164" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mi" id="MathJax-Span-165" style="font-family: MathJax_Main; padding-left: 0.167em; ">log</span><span class="mo" id="MathJax-Span-166"></span><span class="mi" id="MathJax-Span-167" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em; ">n</span><span class="mo" id="MathJax-Span-168" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-35">\Theta(n \log n)</script> [expected] and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-36-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-169"><span style="display: inline-block; position: relative; width: 2.597em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.79em 1000em 3.198em -0.431em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-170"><span class="mi" id="MathJax-Span-171" style="font-family: MathJax_Main; ">Θ</span><span class="mo" id="MathJax-Span-172" style="font-family: MathJax_Main; ">(</span><span class="msubsup" id="MathJax-Span-173"><span style="display: inline-block; position: relative; width: 1.049em; height: 0px; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mi" id="MathJax-Span-174" style="font-family: MathJax_Math; font-style: italic; ">n</span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span><span style="position: absolute; top: -2.716em; left: 0.595em; "><span class="mn" id="MathJax-Span-175" style="font-size: 70.7%; font-family: MathJax_Main; ">2</span><span style="display: inline-block; width: 0px; height: 2.353em; "></span></span></span></span><span class="mo" id="MathJax-Span-176" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.502em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-36">\Theta(n^2)</script> [worst case]</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>1.00</td>
+<td>The expected case was shown to be <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-37-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-177"><span style="display: inline-block; position: relative; width: 4.275em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.437em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-178"><span class="mi" id="MathJax-Span-179" style="font-family: MathJax_Math; font-style: italic; ">O</span><span class="mo" id="MathJax-Span-180" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-181" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mi" id="MathJax-Span-182" style="font-family: MathJax_Main; padding-left: 0.167em; ">log</span><span class="mo" id="MathJax-Span-183"></span><span class="mi" id="MathJax-Span-184" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em; ">n</span><span class="mo" id="MathJax-Span-185" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-37">O( n \log n)</script> in lecture.  In the worst case, you might repeatedly pick the minumum remaining element as the pivot.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 9</h3>
+<div class="quiz_question_text">Let <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-38-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-186"><span style="display: inline-block; position: relative; width: 0.595em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.702em 1000em 2.937em -0.432em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-187"><span class="mi" id="MathJax-Span-188" style="font-family: MathJax_Math; font-style: italic; ">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.06em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.283em; vertical-align: -0.326em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-38">f</script> and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-39-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-189"><span style="display: inline-block; position: relative; width: 0.541em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.937em -0.477em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-190"><span class="mi" id="MathJax-Span-191" style="font-family: MathJax_Math; font-style: italic; ">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.952em; vertical-align: -0.326em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-39">g</script> be two increasing functions, defined on the natural numbers, with <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-40-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-192"><span style="display: inline-block; position: relative; width: 5.79em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.432em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-193"><span class="mi" id="MathJax-Span-194" style="font-family: MathJax_Math; font-style: italic; ">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.06em; "></span></span><span class="mo" id="MathJax-Span-195" style="font-family: MathJax_Main; ">(</span><span class="mn" id="MathJax-Span-196" style="font-family: MathJax_Main; ">1</span><span class="mo" id="MathJax-Span-197" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-198" style="font-family: MathJax_Main; ">,</span><span class="mi" id="MathJax-Span-199" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em; ">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em; "></span></span><span class="mo" id="MathJax-Span-200" style="font-family: MathJax_Main; ">(</span><span class="mn" id="MathJax-Span-201" style="font-family: MathJax_Main; ">1</span><span class="mo" id="MathJax-Span-202" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-203" style="font-family: MathJax_Main; padding-left: 0.278em; ">≥</span><span class="mn" id="MathJax-Span-204" style="font-family: MathJax_Main; padding-left: 0.278em; ">1</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-40">f(1),g(1) \ge 1</script>.
+Assume that <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-41-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-205"><span style="display: inline-block; position: relative; width: 6.602em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.432em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-206"><span class="mi" id="MathJax-Span-207" style="font-family: MathJax_Math; font-style: italic; ">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.06em; "></span></span><span class="mo" id="MathJax-Span-208" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-209" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-210" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-211" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mi" id="MathJax-Span-212" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em; ">O</span><span class="mo" id="MathJax-Span-213" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-214" style="font-family: MathJax_Math; font-style: italic; ">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em; "></span></span><span class="mo" id="MathJax-Span-215" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-216" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-217" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-218" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-41">f(n)=O(g(n))</script>. Is <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-42-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-219"><span style="display: inline-block; position: relative; width: 6.656em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.7em 1000em 3.198em -0.437em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-220"><span class="msubsup" id="MathJax-Span-221"><span style="display: inline-block; position: relative; width: 1.915em; height: 0px; "><span style="position: absolute; clip: rect(1.957em 1000em 2.948em -0.437em); top: -2.786em; left: 0em; "><span class="mn" id="MathJax-Span-222" style="font-family: MathJax_Main; ">2</span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span><span style="position: absolute; top: -2.746em; left: 0.487em; "><span class="texatom" id="MathJax-Span-223"><span class="mrow" id="MathJax-Span-224"><span class="mi" id="MathJax-Span-225" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic; ">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.042em; "></span></span><span class="mo" id="MathJax-Span-226" style="font-size: 70.7%; font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-227" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-228" style="font-size: 70.7%; font-family: MathJax_Main; ">)</span></span></span><span style="display: inline-block; width: 0px; height: 2.353em; "></span></span></span></span><span class="mo" id="MathJax-Span-229" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mi" id="MathJax-Span-230" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em; ">O</span><span class="mo" id="MathJax-Span-231" style="font-family: MathJax_Main; ">(</span><span class="msubsup" id="MathJax-Span-232"><span style="display: inline-block; position: relative; width: 1.915em; height: 0px; "><span style="position: absolute; clip: rect(1.957em 1000em 2.948em -0.437em); top: -2.786em; left: 0em; "><span class="mn" id="MathJax-Span-233" style="font-family: MathJax_Main; ">2</span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span><span style="position: absolute; top: -2.746em; left: 0.487em; "><span class="texatom" id="MathJax-Span-234"><span class="mrow" id="MathJax-Span-235"><span class="mi" id="MathJax-Span-236" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic; ">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em; "></span></span><span class="mo" id="MathJax-Span-237" style="font-size: 70.7%; font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-238" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-239" style="font-size: 70.7%; font-family: MathJax_Main; ">)</span></span></span><span style="display: inline-block; width: 0px; height: 2.353em; "></span></span></span></span><span class="mo" id="MathJax-Span-240" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.615em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-42">2^{f(n)}=O(2^{g(n)})</script> ? (Multiple answers may be correct.)</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[fd321fc322c169676b237d94485d6106][]" id="gensym_5019f3359dd60" value="875925fa32de51dda98d08cbcf7eacc5" checked="" disabled="">Yes if <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-43-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-241"><span style="display: inline-block; position: relative; width: 5.087em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.432em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-242"><span class="mi" id="MathJax-Span-243" style="font-family: MathJax_Math; font-style: italic; ">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.06em; "></span></span><span class="mo" id="MathJax-Span-244" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-245" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-246" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-247" style="font-family: MathJax_Main; padding-left: 0.278em; ">≤</span><span class="mi" id="MathJax-Span-248" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em; ">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em; "></span></span><span class="mo" id="MathJax-Span-249" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-250" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-251" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-43">f(n) \le g(n)</script> for all sufficiently large <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-44-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-252"><span style="display: inline-block; position: relative; width: 0.595em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-253"><span class="mi" id="MathJax-Span-254" style="font-family: MathJax_Math; font-style: italic; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.707em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-44">n</script></td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.25</td>
+<td>Take <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-45-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-255"><span style="display: inline-block; position: relative; width: 2.219em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.957em 1000em 2.959em -0.453em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-256"><span class="mi" id="MathJax-Span-257" style="font-family: MathJax_Math; font-style: italic; ">c</span><span class="mo" id="MathJax-Span-258" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mn" id="MathJax-Span-259" style="font-family: MathJax_Main; padding-left: 0.278em; ">1</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.989em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-45">c=1</script> and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-46-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-260"><span style="display: inline-block; position: relative; width: 1.049em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(3.396em 1000em 4.328em -0.466em); top: -4em; left: 0em; "><span class="mrow" id="MathJax-Span-261"><span class="msubsup" id="MathJax-Span-262"><span style="display: inline-block; position: relative; width: 1.049em; height: 0px; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mi" id="MathJax-Span-263" style="font-family: MathJax_Math; font-style: italic; ">n</span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span><span style="position: absolute; top: -2.203em; left: 0.595em; "><span class="mn" id="MathJax-Span-264" style="font-size: 70.7%; font-family: MathJax_Main; ">0</span><span style="display: inline-block; width: 0px; height: 2.353em; "></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 4em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.902em; vertical-align: -0.277em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-46">n_0</script> sufficiently large.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[fd321fc322c169676b237d94485d6106][]" id="gensym_5019f3359e8d8" value="428c01d930ac88ba3f9847a7c87a47b8" checked="" disabled="">Maybe, maybe not (depends on the functions <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-47-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-265"><span style="display: inline-block; position: relative; width: 0.595em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.702em 1000em 2.937em -0.432em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-266"><span class="mi" id="MathJax-Span-267" style="font-family: MathJax_Math; font-style: italic; ">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.06em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.283em; vertical-align: -0.326em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-47">f</script> and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-48-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-268"><span style="display: inline-block; position: relative; width: 0.541em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.937em -0.477em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-269"><span class="mi" id="MathJax-Span-270" style="font-family: MathJax_Math; font-style: italic; ">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.952em; vertical-align: -0.326em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-48">g</script>).</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.25</td>
+<td>For a positive example, take <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-49-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-271"><span style="display: inline-block; position: relative; width: 6.981em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.432em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-272"><span class="mi" id="MathJax-Span-273" style="font-family: MathJax_Math; font-style: italic; ">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.06em; "></span></span><span class="mo" id="MathJax-Span-274" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-275" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-276" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-277" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mi" id="MathJax-Span-278" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em; ">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em; "></span></span><span class="mo" id="MathJax-Span-279" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-280" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-281" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-282" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mi" id="MathJax-Span-283" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-49">f(n)=g(n)=n</script>.  For a negative example, take <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-50-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-284"><span style="display: inline-block; position: relative; width: 4.329em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.432em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-285"><span class="mi" id="MathJax-Span-286" style="font-family: MathJax_Math; font-style: italic; ">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.06em; "></span></span><span class="mo" id="MathJax-Span-287" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-288" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-289" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-290" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mn" id="MathJax-Span-291" style="font-family: MathJax_Main; padding-left: 0.278em; ">2</span><span class="mi" id="MathJax-Span-292" style="font-family: MathJax_Math; font-style: italic; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-50">f(n) = 2n</script> and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-51-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-293"><span style="display: inline-block; position: relative; width: 3.788em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.477em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-294"><span class="mi" id="MathJax-Span-295" style="font-family: MathJax_Math; font-style: italic; ">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em; "></span></span><span class="mo" id="MathJax-Span-296" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-297" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-298" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-299" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mi" id="MathJax-Span-300" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-51">g(n)=n</script>.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[fd321fc322c169676b237d94485d6106][]" id="gensym_5019f3359f3d0" value="8bb61e007720f6e13165ac0abf6599b2" disabled="">Never</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.25</td>
+<td>Yes if <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-52-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-301"><span style="display: inline-block; position: relative; width: 6.981em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.432em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-302"><span class="mi" id="MathJax-Span-303" style="font-family: MathJax_Math; font-style: italic; ">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.06em; "></span></span><span class="mo" id="MathJax-Span-304" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-305" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-306" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-307" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mi" id="MathJax-Span-308" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em; ">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em; "></span></span><span class="mo" id="MathJax-Span-309" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-310" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-311" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-312" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mi" id="MathJax-Span-313" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-52">f(n)=g(n)=n</script>.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[fd321fc322c169676b237d94485d6106][]" id="gensym_5019f3359fec2" value="32e35a44beffa06fc159512e31df24d7" disabled="">Always</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.25</td>
+<td>Not if <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-53-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-314"><span style="display: inline-block; position: relative; width: 4.329em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.432em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-315"><span class="mi" id="MathJax-Span-316" style="font-family: MathJax_Math; font-style: italic; ">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.06em; "></span></span><span class="mo" id="MathJax-Span-317" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-318" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-319" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-320" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mn" id="MathJax-Span-321" style="font-family: MathJax_Main; padding-left: 0.278em; ">2</span><span class="mi" id="MathJax-Span-322" style="font-family: MathJax_Math; font-style: italic; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-53">f(n) = 2n</script> and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-54-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-323"><span style="display: inline-block; position: relative; width: 3.788em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.477em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-324"><span class="mi" id="MathJax-Span-325" style="font-family: MathJax_Math; font-style: italic; ">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em; "></span></span><span class="mo" id="MathJax-Span-326" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-327" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-328" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-329" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mi" id="MathJax-Span-330" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-54">g(n)=n</script>.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 10</h3>
+<div class="quiz_question_text">Let <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-55-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-331"><span style="display: inline-block; position: relative; width: 4.491em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.957em 1000em 2.988em -0.448em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-332"><span class="mn" id="MathJax-Span-333" style="font-family: MathJax_Main; ">0</span><span class="mo" id="MathJax-Span-334" style="font-family: MathJax_Main; padding-left: 0.278em; ">&lt;</span><span class="mi" id="MathJax-Span-335" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em; ">α</span><span class="mo" id="MathJax-Span-336" style="font-family: MathJax_Main; padding-left: 0.278em; ">&lt;</span><span class="mn" id="MathJax-Span-337" style="font-family: MathJax_Main; padding-left: 0.278em; ">.5</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.026em; vertical-align: -0.119em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-55">0\lt \alpha \lt .5</script> be some constant. Consider running the Partition subroutine on an array with no duplicate elements and with the pivot element chosen uniformly at random (as in QuickSort and RSelect).  What is the probability that, after partitioning, both subarrays (elements to the left of the pivot, and elements to the right of the pivot) have size at least <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-56-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-338"><span style="display: inline-block; position: relative; width: 0.649em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.453em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-339"><span class="mi" id="MathJax-Span-340" style="font-family: MathJax_Math; font-style: italic; ">α</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.707em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-56">\alpha</script> times that of the original array?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[e1617d70bc8312105e0ee829346e6af2][]" id="gensym_5019f335a35d5" value="9e26b5e1c1753f48985a16ba106d46d6" checked="" disabled=""><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-57-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-341"><span style="display: inline-block; position: relative; width: 2.814em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.957em 1000em 2.959em -0.404em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-342"><span class="mn" id="MathJax-Span-343" style="font-family: MathJax_Main; ">1</span><span class="mo" id="MathJax-Span-344" style="font-family: MathJax_Main; padding-left: 0.222em; ">−</span><span class="mn" id="MathJax-Span-345" style="font-family: MathJax_Main; padding-left: 0.222em; ">2</span><span class="mi" id="MathJax-Span-346" style="font-family: MathJax_Math; font-style: italic; ">α</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.989em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-57">1-2\alpha</script></td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>1.00</td>
+<td>That's correct!</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>1.00 / 1.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 11</h3>
+<div class="quiz_question_text">Which of the following statements hold?  (As usual <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-58-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-347"><span style="display: inline-block; position: relative; width: 0.595em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-348"><span class="mi" id="MathJax-Span-349" style="font-family: MathJax_Math; font-style: italic; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.707em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-58">n</script> and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-59-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-350"><span style="display: inline-block; position: relative; width: 0.866em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-351"><span class="mi" id="MathJax-Span-352" style="font-family: MathJax_Math; font-style: italic; ">m</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.707em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-59">m</script> denote the number of vertices and edges, respectively, of a graph.)</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[38c758c3ef3e418ebffae97270fd7217][]" id="gensym_5019f335a6ef1" value="63818094742a1754801ed09d1edea203" checked="" disabled="">Breadth-first search can be used to compute the connected components of an undirected graph in <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-60-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-353"><span style="display: inline-block; position: relative; width: 4.167em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.437em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-354"><span class="mi" id="MathJax-Span-355" style="font-family: MathJax_Math; font-style: italic; ">O</span><span class="mo" id="MathJax-Span-356" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-357" style="font-family: MathJax_Math; font-style: italic; ">m</span><span class="mo" id="MathJax-Span-358" style="font-family: MathJax_Main; padding-left: 0.222em; ">+</span><span class="mi" id="MathJax-Span-359" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em; ">n</span><span class="mo" id="MathJax-Span-360" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-60">O(m+n)</script> time.</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>As covered in lecture.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[38c758c3ef3e418ebffae97270fd7217][]" id="gensym_5019f335a7a5c" value="c7890954f711a391e4ebb4a8d8e679c4" checked="" disabled="">Breadth-first search can be used to compute shortest paths in <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-61-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-361"><span style="display: inline-block; position: relative; width: 4.167em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.437em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-362"><span class="mi" id="MathJax-Span-363" style="font-family: MathJax_Math; font-style: italic; ">O</span><span class="mo" id="MathJax-Span-364" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-365" style="font-family: MathJax_Math; font-style: italic; ">m</span><span class="mo" id="MathJax-Span-366" style="font-family: MathJax_Main; padding-left: 0.222em; ">+</span><span class="mi" id="MathJax-Span-367" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em; ">n</span><span class="mo" id="MathJax-Span-368" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-61">O(m+n)</script> time (when every edge has unit length).</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>As covered in lecture.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[38c758c3ef3e418ebffae97270fd7217][]" id="gensym_5019f335a8593" value="d446479dfb442c8ac3e1b88e24002671" checked="" disabled="">Depth-first search can be used to compute a topological ordering of a directed acyclic graph in <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-62-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-369"><span style="display: inline-block; position: relative; width: 4.167em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.437em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-370"><span class="mi" id="MathJax-Span-371" style="font-family: MathJax_Math; font-style: italic; ">O</span><span class="mo" id="MathJax-Span-372" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-373" style="font-family: MathJax_Math; font-style: italic; ">m</span><span class="mo" id="MathJax-Span-374" style="font-family: MathJax_Main; padding-left: 0.222em; ">+</span><span class="mi" id="MathJax-Span-375" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em; ">n</span><span class="mo" id="MathJax-Span-376" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-62">O(m+n)</script> time.</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>As covered in lecture.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[38c758c3ef3e418ebffae97270fd7217][]" id="gensym_5019f335a91f1" value="c91dd37618b305c02b2f9b0a07cefc87" checked="" disabled="">Depth-first search can be used to compute the strongly connected components of a directed graph in <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-63-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-377"><span style="display: inline-block; position: relative; width: 4.167em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.437em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-378"><span class="mi" id="MathJax-Span-379" style="font-family: MathJax_Math; font-style: italic; ">O</span><span class="mo" id="MathJax-Span-380" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-381" style="font-family: MathJax_Math; font-style: italic; ">m</span><span class="mo" id="MathJax-Span-382" style="font-family: MathJax_Main; padding-left: 0.222em; ">+</span><span class="mi" id="MathJax-Span-383" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em; ">n</span><span class="mo" id="MathJax-Span-384" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-63">O(m+n)</script> time.</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>As covered in lecture.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 12</h3>
+<div class="quiz_question_text">When does a directed graph have a unique topological ordering?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[8392cbf3782fe59c5993a7feca06eeda][]" id="gensym_5019f335aca5e" value="8a7d364ee933569e676e2d77014315cb" checked="" disabled="">Whenever it is directed acyclic</td>
+<td><img src="./Exam Feedback_files/cross.png" title="Incorrect" alt="Incorrect"></td>
+<td>0.00</td>
+<td>It might have many topological orderings.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>0.00 / 2.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 13</h3>
+<div class="quiz_question_text">Suppose that a randomized algorithm succeeds (e.g., correctly computes the minimum cut of a graph) with probability p  
+(with <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-64-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-385"><span style="display: inline-block; position: relative; width: 4.058em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.957em 1000em 3.142em -0.448em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-386"><span class="mn" id="MathJax-Span-387" style="font-family: MathJax_Main; ">0</span><span class="mo" id="MathJax-Span-388" style="font-family: MathJax_Main; padding-left: 0.278em; ">&lt;</span><span class="mi" id="MathJax-Span-389" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em; ">p</span><span class="mo" id="MathJax-Span-390" style="font-family: MathJax_Main; padding-left: 0.278em; ">&lt;</span><span class="mn" id="MathJax-Span-391" style="font-family: MathJax_Main; padding-left: 0.278em; ">1</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.22em; vertical-align: -0.313em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-64">0\lt p \lt 1</script>).  Let <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-65-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-392"><span style="display: inline-block; position: relative; width: 0.379em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.976em 1000em 2.743em -0.447em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-393"><span class="mi" id="MathJax-Span-394" style="font-family: MathJax_Math; font-style: italic; ">ϵ</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.693em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-65">\epsilon</script> be a small positive number (less than 1).
+How many independent times do you need to run the algorithm to ensure that, with probability at least <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-66-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-395"><span style="display: inline-block; position: relative; width: 2.056em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.957em 1000em 2.959em -0.404em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-396"><span class="mn" id="MathJax-Span-397" style="font-family: MathJax_Main; ">1</span><span class="mo" id="MathJax-Span-398" style="font-family: MathJax_Main; padding-left: 0.222em; ">−</span><span class="mi" id="MathJax-Span-399" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em; ">ϵ</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.989em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-66">1-\epsilon</script>, at least one trial succeeds?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[695a6738eb1df978b5b1d5cc078dca80][]" id="gensym_5019f335b0468" value="3fc29d782936251d06b2ef68fc73f3a6" checked="" disabled=""><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-67-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-400"><span style="display: inline-block; position: relative; width: 3.174em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(2.79em 1000em 4.781em -0.367em); top: -4em; left: 0em; "><span class="mrow" id="MathJax-Span-401"><span class="mfrac" id="MathJax-Span-402" style="padding-left: 0.12em; padding-right: 0.12em; "><span style="display: inline-block; position: relative; width: 2.934em; height: 0px; "><span style="position: absolute; clip: rect(1.7em 1000em 2.661em -0.469em); top: -2.91em; left: 50%; margin-left: -0.703em; "><span class="mrow" id="MathJax-Span-403"><span class="mi" id="MathJax-Span-404" style="font-size: 70.7%; font-family: MathJax_Main; ">log</span><span class="mo" id="MathJax-Span-405" style="font-size: 70.7%; "></span><span class="mi" id="MathJax-Span-406" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic; padding-left: 0.236em; ">ϵ</span></span><span style="display: inline-block; width: 0px; height: 2.353em; "></span></span><span style="position: absolute; clip: rect(1.66em 1000em 2.692em -0.469em); top: -1.911em; left: 50%; margin-left: -1.407em; "><span class="mrow" id="MathJax-Span-407"><span class="mi" id="MathJax-Span-408" style="font-size: 70.7%; font-family: MathJax_Main; ">log</span><span class="mo" id="MathJax-Span-409" style="font-size: 70.7%; "></span><span class="mo" id="MathJax-Span-410" style="font-size: 70.7%; font-family: MathJax_Main; ">(</span><span class="mn" id="MathJax-Span-411" style="font-size: 70.7%; font-family: MathJax_Main; ">1</span><span class="mo" id="MathJax-Span-412" style="font-size: 70.7%; font-family: MathJax_Main; ">−</span><span class="mi" id="MathJax-Span-413" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic; ">p</span><span class="mo" id="MathJax-Span-414" style="font-size: 70.7%; font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.353em; "></span></span><span style="position: absolute; clip: rect(0.838em 1000em 1.23em -0.487em); top: -1.288em; left: 0em; "><span style="border-left-width: 2.934em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.25px; vertical-align: 0em; "></span><span style="display: inline-block; width: 0px; height: 1.068em; "></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 4em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 2.236em; vertical-align: -0.848em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-67">\frac{\log \epsilon}{\log (1-p)}</script></td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>2.00</td>
+<td>The failure probability after <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-68-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-415"><span style="display: inline-block; position: relative; width: 0.325em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.746em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-416"><span class="mi" id="MathJax-Span-417" style="font-family: MathJax_Math; font-style: italic; ">i</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.983em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-68">i</script> independent trials is <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-69-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-418"><span style="display: inline-block; position: relative; width: 3.247em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.679em 1000em 3.198em -0.393em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-419"><span class="mo" id="MathJax-Span-420" style="font-family: MathJax_Main; ">(</span><span class="mn" id="MathJax-Span-421" style="font-family: MathJax_Main; ">1</span><span class="mo" id="MathJax-Span-422" style="font-family: MathJax_Main; padding-left: 0.222em; ">−</span><span class="mi" id="MathJax-Span-423" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em; ">p</span><span class="msubsup" id="MathJax-Span-424"><span style="display: inline-block; position: relative; width: 0.67em; height: 0px; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.432em); top: -2.786em; left: 0em; "><span class="mo" id="MathJax-Span-425" style="font-family: MathJax_Main; ">)</span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span><span style="position: absolute; top: -2.776em; left: 0.379em; "><span class="mi" id="MathJax-Span-426" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic; ">i</span><span style="display: inline-block; width: 0px; height: 2.299em; "></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.641em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-69">(1-p)^i</script>.  To get the correct answer, set this equal to the desired failure probability <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-70-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-427"><span style="display: inline-block; position: relative; width: 0.379em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.976em 1000em 2.743em -0.447em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-428"><span class="mi" id="MathJax-Span-429" style="font-family: MathJax_Math; font-style: italic; ">ϵ</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.693em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-70">\epsilon</script>, take logarithms (the base doesn't matter) and solve for <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-71-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-430"><span style="display: inline-block; position: relative; width: 0.325em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.746em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-431"><span class="mi" id="MathJax-Span-432" style="font-family: MathJax_Math; font-style: italic; ">i</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.983em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-71">i</script>.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 14</h3>
+<div class="quiz_question_text">Suppose you implement the operations Insert and Extract-Min using a <i>sorted</i> array (e.g., from biggest to smallest).  What is the worst-case running time of Insert and Extract-Min, respectively?   (Assume that you have a large enough array to accommodate the Insertions that you face.)</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[e988243650cc376a5e6f0e9337ec5404][]" id="gensym_5019f335b4121" value="020d38db78b8945c5ce74f4911b66eb8" checked="" disabled=""><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-72-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-433"><span style="display: inline-block; position: relative; width: 2.11em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.431em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-434"><span class="mi" id="MathJax-Span-435" style="font-family: MathJax_Main; ">Θ</span><span class="mo" id="MathJax-Span-436" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-437" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-438" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-72">\Theta(n)</script> and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-73-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-439"><span style="display: inline-block; position: relative; width: 2.002em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.431em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-440"><span class="mi" id="MathJax-Span-441" style="font-family: MathJax_Main; ">Θ</span><span class="mo" id="MathJax-Span-442" style="font-family: MathJax_Main; ">(</span><span class="mn" id="MathJax-Span-443" style="font-family: MathJax_Main; ">1</span><span class="mo" id="MathJax-Span-444" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-73">\Theta(1)</script></td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>2.00</td>
+<td>As in Homework #5.  To keep the array sorted you need to do <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-74-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-445"><span style="display: inline-block; position: relative; width: 2.11em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.431em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-446"><span class="mi" id="MathJax-Span-447" style="font-family: MathJax_Main; ">Θ</span><span class="mo" id="MathJax-Span-448" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-449" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-450" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-74">\Theta(n)</script> worst-case work on an Insert.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 15</h3>
+<div class="quiz_question_text">Which of the following patterns in a computer program suggests that a heap data structure could provide a significant speed-up (check all that apply)?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[4458aacdfa12b5153c05eaa1c49081cd][]" id="gensym_5019f335b7a4c" value="3ad1ac819a85b11d7ad4374ef8fd5ca7" checked="" disabled="">Repeated maximum computations</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>Heaps are just as useful for these as for minimum computations (e.g., just store the negative of each key, so the Extract Min winds up extracting the max).</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[4458aacdfa12b5153c05eaa1c49081cd][]" id="gensym_5019f335b864a" value="2bfd96679d6f5470039aaeeff11770c6" checked="" disabled="">Repeated minimum computations</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>E.g., in Dijkstra's shortest-path algorithm or in HeapSort.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[4458aacdfa12b5153c05eaa1c49081cd][]" id="gensym_5019f335b91a3" value="2b76f2fb106338133b7cf36c0503cb6c" disabled="">None of these</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>Useful in, e.g., in Dijkstra's shortest-path algorithm or in HeapSort.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[4458aacdfa12b5153c05eaa1c49081cd][]" id="gensym_5019f335b9c3f" value="983728f67b0dcd0bf3d5f05a0aae6533" disabled="">Repeated lookups</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>Heaps do not generally support fast lookups (unless you happen to be looking for the minimum).</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 16</h3>
+<div class="quiz_question_text">Which of the following patterns in a computer program suggests that a hash table could provide a significant speed-up (check all that apply)?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[f792e3b19ac5ea3bef3ceb45c0d92a31][]" id="gensym_5019f335bd10c" value="2fecb194c8941bf0c14a1b58d080d33b" disabled="">Repeated maximum computations</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>Hash tables don't support fast queries that reference the ordering of the keys (just lookups).</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[f792e3b19ac5ea3bef3ceb45c0d92a31][]" id="gensym_5019f335bdc62" value="f7ed5949b86c349ce0ae32fd38c1640b" disabled="">Repeated minimum computations</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>Hash tables don't support fast queries that reference the ordering of the keys (just lookups).</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[f792e3b19ac5ea3bef3ceb45c0d92a31][]" id="gensym_5019f335be723" value="d0632273028cfb014fa83a6e1f8fb3a5" disabled="">None of these</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>Hash tables are super-useful for repeated lookups.</td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[f792e3b19ac5ea3bef3ceb45c0d92a31][]" id="gensym_5019f335bf3c0" value="d50d1754308ee6e7af36ec635b3d4591" checked="" disabled="">Repeated lookups</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>The raison d'etre of a hash table.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 17</h3>
+<div class="quiz_question_text">Which of the following statements about Dijkstra's shortest-path algorithm are true for input graphs that might have some negative edge lengths?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[a8334eaa0530141820da6d4b9c5afaa5][]" id="gensym_5019f335c2b54" value="fb2c938007d4281097aa8350a72f7c89" disabled="">It may or may not terminate (depending on the graph).</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[a8334eaa0530141820da6d4b9c5afaa5][]" id="gensym_5019f335c3685" value="7a31ef3a13e7c95091193afb684156c4" checked="" disabled="">It is guaranteed to terminate.</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[a8334eaa0530141820da6d4b9c5afaa5][]" id="gensym_5019f335c431d" value="116b823c89ef946c06f3b74c20a56273" checked="" disabled="">It may or may not correctly compute shortest-path distances (from a given source vertex to all other vertices), depending on the graph.</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="checkbox" name="answer[a8334eaa0530141820da6d4b9c5afaa5][]" id="gensym_5019f335c5070" value="ebe7a7d5295c34129186b88266bb0e31" disabled="">It is guaranteed to correctly compute shortest-path distances (from a given source vertex to all other vertices).</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>0.50</td>
+<td>We gave a counterexample in lecture.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 18</h3>
+<div class="quiz_question_text">Suppose you are given <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-75-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-451"><span style="display: inline-block; position: relative; width: 0.487em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.713em 1000em 2.743em -0.439em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-452"><span class="mi" id="MathJax-Span-453" style="font-family: MathJax_Math; font-style: italic; ">k</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.025em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-75">k</script> sorted arrays, each with <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-76-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-454"><span style="display: inline-block; position: relative; width: 0.595em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-455"><span class="mi" id="MathJax-Span-456" style="font-family: MathJax_Math; font-style: italic; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.707em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-76">n</script> elements, and you want to combine them into a single array of <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-77-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-457"><span style="display: inline-block; position: relative; width: 1.082em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.713em 1000em 2.743em -0.439em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-458"><span class="mi" id="MathJax-Span-459" style="font-family: MathJax_Math; font-style: italic; ">k</span><span class="mi" id="MathJax-Span-460" style="font-family: MathJax_Math; font-style: italic; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.025em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-77">kn</script> elements. Consider the following approach. Divide the <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-78-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-461"><span style="display: inline-block; position: relative; width: 0.487em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.713em 1000em 2.743em -0.439em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-462"><span class="mi" id="MathJax-Span-463" style="font-family: MathJax_Math; font-style: italic; ">k</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.025em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-78">k</script> arrays into <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-79-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-464"><span style="display: inline-block; position: relative; width: 1.461em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.439em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-465"><span class="mi" id="MathJax-Span-466" style="font-family: MathJax_Math; font-style: italic; ">k</span><span class="texatom" id="MathJax-Span-467"><span class="mrow" id="MathJax-Span-468"><span class="mo" id="MathJax-Span-469" style="font-family: MathJax_Main; ">/</span></span></span><span class="mn" id="MathJax-Span-470" style="font-family: MathJax_Main; ">2</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-79">k/2</script> pairs of arrays, and use the Merge subroutine taught in the MergeSort lectures to combine each pair.  Now you are left with <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-80-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-471"><span style="display: inline-block; position: relative; width: 1.461em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.439em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-472"><span class="mi" id="MathJax-Span-473" style="font-family: MathJax_Math; font-style: italic; ">k</span><span class="texatom" id="MathJax-Span-474"><span class="mrow" id="MathJax-Span-475"><span class="mo" id="MathJax-Span-476" style="font-family: MathJax_Main; ">/</span></span></span><span class="mn" id="MathJax-Span-477" style="font-family: MathJax_Main; ">2</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-80">k/2</script> sorted arrays, each with <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-81-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-478"><span style="display: inline-block; position: relative; width: 1.082em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.957em 1000em 2.959em -0.437em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-479"><span class="mn" id="MathJax-Span-480" style="font-family: MathJax_Main; ">2</span><span class="mi" id="MathJax-Span-481" style="font-family: MathJax_Math; font-style: italic; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.989em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-81">2n</script> elements.  Repeat this approach until you have a single sorted array with <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-82-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-482"><span style="display: inline-block; position: relative; width: 1.082em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.713em 1000em 2.743em -0.439em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-483"><span class="mi" id="MathJax-Span-484" style="font-family: MathJax_Math; font-style: italic; ">k</span><span class="mi" id="MathJax-Span-485" style="font-family: MathJax_Math; font-style: italic; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.025em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-82">kn</script> elements.  What is the running time of this procedure, as a function of <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-83-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-486"><span style="display: inline-block; position: relative; width: 0.487em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.713em 1000em 2.743em -0.439em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-487"><span class="mi" id="MathJax-Span-488" style="font-family: MathJax_Math; font-style: italic; ">k</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.025em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-83">k</script> and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-84-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-489"><span style="display: inline-block; position: relative; width: 0.595em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-490"><span class="mi" id="MathJax-Span-491" style="font-family: MathJax_Math; font-style: italic; ">n</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.707em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-84">n</script>?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[7f749a9f7b2c2131ff5d1c122647d9c5][]" id="gensym_5019f335c88d3" value="c210ca670b5e1186b1acc6a7fc94d3ce" checked="" disabled=""><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-85-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-492"><span style="display: inline-block; position: relative; width: 4.329em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.452em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-493"><span class="mi" id="MathJax-Span-494" style="font-family: MathJax_Math; font-style: italic; ">θ</span><span class="mo" id="MathJax-Span-495" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-496" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mi" id="MathJax-Span-497" style="font-family: MathJax_Math; font-style: italic; ">k</span><span class="mi" id="MathJax-Span-498" style="font-family: MathJax_Main; padding-left: 0.167em; ">log</span><span class="mo" id="MathJax-Span-499"></span><span class="mi" id="MathJax-Span-500" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em; ">k</span><span class="mo" id="MathJax-Span-501" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-85">\theta(nk\log k)</script></td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>2.00</td>
+<td>There are <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-86-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-502"><span style="display: inline-block; position: relative; width: 3.409em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.431em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-503"><span class="mi" id="MathJax-Span-504" style="font-family: MathJax_Main; ">Θ</span><span class="mo" id="MathJax-Span-505" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-506" style="font-family: MathJax_Main; ">log</span><span class="mo" id="MathJax-Span-507"></span><span class="mi" id="MathJax-Span-508" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em; ">k</span><span class="mo" id="MathJax-Span-509" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-86">\Theta(\log k)</script> iterations (you terminate once you've divided <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-87-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-510"><span style="display: inline-block; position: relative; width: 0.487em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.713em 1000em 2.743em -0.439em); top: -2.569em; left: 0em; "><span class="mrow" id="MathJax-Span-511"><span class="mi" id="MathJax-Span-512" style="font-family: MathJax_Math; font-style: italic; ">k</span></span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.025em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-87">k</script> by two enough times to get to 1), and each iteration takes <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-88-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-513"><span style="display: inline-block; position: relative; width: 2.597em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.431em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-514"><span class="mi" id="MathJax-Span-515" style="font-family: MathJax_Main; ">Θ</span><span class="mo" id="MathJax-Span-516" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-517" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mi" id="MathJax-Span-518" style="font-family: MathJax_Math; font-style: italic; ">k</span><span class="mo" id="MathJax-Span-519" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-88">\Theta(nk)</script> time.</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 19</h3>
+<div class="quiz_question_text">Running time of Strassen's matrix multiplication algorithm: Suppose that the running time of an algorithm is governed by the recurrence <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-89-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-520"><span style="display: inline-block; position: relative; width: 10.065em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.79em 1000em 3.198em -0.466em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-521"><span class="mi" id="MathJax-Span-522" style="font-family: MathJax_Math; font-style: italic; ">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.12em; "></span></span><span class="mo" id="MathJax-Span-523" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-524" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-525" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-526" style="font-family: MathJax_Main; padding-left: 0.278em; ">=</span><span class="mn" id="MathJax-Span-527" style="font-family: MathJax_Main; padding-left: 0.278em; ">7</span><span class="mo" id="MathJax-Span-528" style="font-family: MathJax_Main; padding-left: 0.222em; ">∗</span><span class="mi" id="MathJax-Span-529" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em; ">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.12em; "></span></span><span class="mo" id="MathJax-Span-530" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-531" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="texatom" id="MathJax-Span-532"><span class="mrow" id="MathJax-Span-533"><span class="mo" id="MathJax-Span-534" style="font-family: MathJax_Main; ">/</span></span></span><span class="mn" id="MathJax-Span-535" style="font-family: MathJax_Main; ">2</span><span class="mo" id="MathJax-Span-536" style="font-family: MathJax_Main; ">)</span><span class="mo" id="MathJax-Span-537" style="font-family: MathJax_Main; padding-left: 0.222em; ">+</span><span class="msubsup" id="MathJax-Span-538" style="padding-left: 0.222em; "><span style="display: inline-block; position: relative; width: 1.049em; height: 0px; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mi" id="MathJax-Span-539" style="font-family: MathJax_Math; font-style: italic; ">n</span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span><span style="position: absolute; top: -2.716em; left: 0.595em; "><span class="mn" id="MathJax-Span-540" style="font-size: 70.7%; font-family: MathJax_Main; ">2</span><span style="display: inline-block; width: 0px; height: 2.353em; "></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.502em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-89">T(n)=7∗T(n/2)+n^2</script>. What's the overall asymptotic running time (i.e., the value of <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-90-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-541"><span style="display: inline-block; position: relative; width: 2.11em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.873em 1000em 3.198em -0.466em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-542"><span class="mi" id="MathJax-Span-543" style="font-family: MathJax_Math; font-style: italic; ">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.12em; "></span></span><span class="mo" id="MathJax-Span-544" style="font-family: MathJax_Main; ">(</span><span class="mi" id="MathJax-Span-545" style="font-family: MathJax_Math; font-style: italic; ">n</span><span class="mo" id="MathJax-Span-546" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.396em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-90">T(n)</script>)?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[815310aa1c308e5b77f6afd3d742f68a][]" id="gensym_5019f335cc64d" value="bd5d66ebdc31968acb3a598c74e92f4b" checked="" disabled=""><span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-91-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-547"><span style="display: inline-block; position: relative; width: 4.113em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.73em 1000em 3.198em -0.452em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-548"><span class="mi" id="MathJax-Span-549" style="font-family: MathJax_Math; font-style: italic; ">θ</span><span class="mo" id="MathJax-Span-550" style="font-family: MathJax_Main; ">(</span><span class="msubsup" id="MathJax-Span-551"><span style="display: inline-block; position: relative; width: 2.889em; height: 0px; "><span style="position: absolute; clip: rect(1.965em 1000em 2.743em -0.466em); top: -2.569em; left: 0em; "><span class="mi" id="MathJax-Span-552" style="font-family: MathJax_Math; font-style: italic; ">n</span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span><span style="position: absolute; top: -2.716em; left: 0.595em; "><span class="texatom" id="MathJax-Span-553"><span class="mrow" id="MathJax-Span-554"><span class="msubsup" id="MathJax-Span-555"><span style="display: inline-block; position: relative; width: 1.298em; height: 0px; "><span style="position: absolute; clip: rect(1.7em 1000em 2.661em -0.469em); top: -2.353em; left: 0em; "><span class="mi" id="MathJax-Span-556" style="font-size: 70.7%; font-family: MathJax_Main; ">log</span><span style="display: inline-block; width: 0px; height: 2.353em; "></span></span><span style="position: absolute; top: -2.074em; left: 0.974em; "><span class="mn" id="MathJax-Span-557" style="font-size: 50%; font-family: MathJax_Main; ">2</span><span style="display: inline-block; width: 0px; height: 2.245em; "></span></span></span></span><span class="mo" id="MathJax-Span-558" style="font-size: 70.7%; "></span><span class="mo" id="MathJax-Span-559" style="font-size: 70.7%; font-family: MathJax_Main; ">(</span><span class="mn" id="MathJax-Span-560" style="font-size: 70.7%; font-family: MathJax_Main; ">7</span><span class="mo" id="MathJax-Span-561" style="font-size: 70.7%; font-family: MathJax_Main; ">)</span></span></span><span style="display: inline-block; width: 0px; height: 2.353em; "></span></span></span></span><span class="mo" id="MathJax-Span-562" style="font-family: MathJax_Main; ">)</span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.577em; vertical-align: -0.383em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-91">\theta(n^{\log_2(7)})</script></td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>2.00</td>
+<td>That's correct!</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div><div class="quiz_question_body">
+<h3 class="quiz_question_number">Question 20</h3>
+<div class="quiz_question_text">Recall the Master Method and its three parameters <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-92-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-563"><span style="display: inline-block; position: relative; width: 2.381em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(1.929em 1000em 3.142em -0.454em); top: -2.786em; left: 0em; "><span class="mrow" id="MathJax-Span-564"><span class="mi" id="MathJax-Span-565" style="font-family: MathJax_Math; font-style: italic; ">a</span><span class="mo" id="MathJax-Span-566" style="font-family: MathJax_Main; ">,</span><span class="mi" id="MathJax-Span-567" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em; ">b</span><span class="mo" id="MathJax-Span-568" style="font-family: MathJax_Main; ">,</span><span class="mi" id="MathJax-Span-569" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em; ">d<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em; "></span></span></span><span style="display: inline-block; width: 0px; height: 2.786em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.255em; vertical-align: -0.313em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-92">a,b,d</script>.  Which of the following is the best interpretation of <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-93-Frame" role="textbox" aria-readonly="true" style=""><nobr><span class="math" id="MathJax-Span-570"><span style="display: inline-block; position: relative; width: 0.941em; height: 0px; font-size: 126%; "><span style="position: absolute; clip: rect(2.926em 1000em 4.173em -0.447em); top: -4em; left: 0em; "><span class="mrow" id="MathJax-Span-571"><span class="msubsup" id="MathJax-Span-572"><span style="display: inline-block; position: relative; width: 0.941em; height: 0px; "><span style="position: absolute; clip: rect(1.713em 1000em 2.743em -0.447em); top: -2.569em; left: 0em; "><span class="mi" id="MathJax-Span-573" style="font-family: MathJax_Math; font-style: italic; ">b</span><span style="display: inline-block; width: 0px; height: 2.569em; "></span></span><span style="position: absolute; top: -2.72em; left: 0.433em; "><span class="mi" id="MathJax-Span-574" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic; ">d<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em; "></span></span><span style="display: inline-block; width: 0px; height: 2.299em; "></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 4em; "></span></span></span><span style="border-left-width: 0em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.299em; vertical-align: -0.082em; "></span></span></nobr></span><script type="math/tex" id="MathJax-Element-93">b^d</script>, in the context of divide-and-conquer algorithms?</div>
+<div class="quiz_options randomize"></div>
+<table>
+<tbody><tr>
+<th>Your Answer</th>
+<th></th>
+<th>Score</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td>
+<input class="quiz_input" type="radio" name="answer[c2f5769c96bb495fcee3153670c4a98a][]" id="gensym_5019f335d06a4" value="005a0154875ec4cb0b7b238df1556cf9" checked="" disabled="">The rate at which the work-per-subproblem is shrinking (per level of recursion).</td>
+<td><img src="./Exam Feedback_files/tick.png" title="Correct" alt="Correct"></td>
+<td>2.00</td>
+<td>That's correct!</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td>2.00 / 2.00</td>
+<td></td>
+</tr>
+</tbody></table>
+</div>
+    <div class="quiz_submit_button_div">
+        </div>
+
+</form>
+        </div>
+    </div>
+        
+
+
+<div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: MathJax_Main, sans-serif; "></div></body></html>
